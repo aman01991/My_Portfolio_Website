@@ -11,9 +11,11 @@
 .sidebar 
 {
     background-color: rgb(177, 173, 173);
-    width: 20vw;
+    /* width: 20vw; */
     height: 100vh;
     font-family: 'Fira Sans', sans-serif;
+    transition: transform 0.3s ease-in;
+    position: absolute;
 }
 
 .sidebar nav 
@@ -36,6 +38,7 @@
 {
     /* background-color: aqua; */
     width: 80vw;
+    font-size: 20px;
 }
 
 .container
@@ -53,6 +56,7 @@
 }
 
 .devInfo{
+    font-size: 16px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -61,25 +65,25 @@
 }
 
 .hello{
-    font-size: 55px;
+    font-size: 3em;
 }
 .name{
-    font-size: 32px;
+    font-size: 3em;
     font-weight: bold;
     font-family: 'Fira Sans', sans-serif;
 }
 .about{
-    font-size: 30px;
+    font-size: 2.5em;
 }
 
 .moreabout{
-    font-size: 20px;
+    font-size: 2em;
     font-family: 'Fira Sans', sans-serif;
     margin: 16px;
 }
 
 .button{
-    margin-top: 22px;
+    margin-top: 2.2em;
 }
 .btn{
     padding: 10px 14px;
@@ -87,8 +91,8 @@
     color: white;
     background-color: crimson;
     font-weight: bold;
-    font-size: 12px;
-    margin: 4px;
+    font-size: 14px;
+    margin: 3px 4px;
     cursor: pointer;
     
 }
@@ -111,12 +115,13 @@
 
 .contactform{
     padding: 0 34px;
-    padding-top: 75px;
+    /* padding-top: 75px; */
     font-family: 'Fira Sans', sans-serif;
+    margin: 80px;
 }
 
 .contactform h1{
-    padding: 12px 0;
+    /* padding: 12px 0; */
     font-family: 'Source Sans Pro', sans-serif;
 }
 
@@ -127,11 +132,15 @@
 }
 
 .contactform form div input{
-    width: 20vw;
+    /* width: 20vw; */
     border-radius: 6px;
     font-size: 16px;
     margin: 5px 0 0 0;
     padding: 2px
+}
+
+.contactform form{
+    margin: 0 40px;
 }
 
 #emailHelp{
@@ -150,6 +159,10 @@
     margin: 3px 0;
 }
 
+.blogContainer{
+    margin: 80px;
+}
+
 .blogItem{
     margin: 20px;
     font-family: 'Fira Sans', sans-serif;
@@ -162,6 +175,10 @@ h1{
 
 p{
     font-family: 'Source Sans Pro', sans-serif;
+}
+
+.intro{
+    margin: 80px;
 }
 
 .intro h2{
@@ -203,6 +220,47 @@ p{
     width: 75px;
     background-color: aqua;
 }
+
+.sidebarGo{
+    transform: translate(-440px, 0px);
+        position: absolute;
+}
+
+.hamburger{
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+}
+
+.ham{
+    margin-top: 8px;
+    margin-left: 8px;
+}
+
+.cross{
+    margin-left: 170px;
+    margin-top: 8px;
+}
+
+@media (max-widht: 735px){
+    *{
+        /* background-color: red; */
+    }
+    .devPic{
+        display: none;
+    }
+    /* *.sidebar{
+        transform: translate(-440px, 0px);
+        position: absolute;
+    } */
+}
+
+
+
+
+
+
 
 
 
